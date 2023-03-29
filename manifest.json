@@ -2,12 +2,12 @@
     "name": "My Project PWA",
     "short_name": "Web Developer",
     "description": "Este esun proyecto con base a los pueblos magicos y sus diferentes categorias ecoturisticas",
-    "theme_color": "#abd1f2",
+    "theme_color": "#C40576",
     "background_color": "#2196f3",
     "display": "standalone",
     "orientation": "portrait-primary",
-    "scope": "./",
     "start_url": "index.html",
+    "scope": "index.html",
     "icons": [
       {
         "src": "./imagenes/icons/icon-72x72.png",
