@@ -5,6 +5,7 @@
     "theme_color": "#C40576",
     "background_color": "#2196f3",
     "display": "standalone",
+    "display_override": ["window-controls-overlay"],
     "orientation": "portrait-primary",
     "start_url": "index.html",
     "scope": "index.html",

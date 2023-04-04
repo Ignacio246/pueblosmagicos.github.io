@@ -17,6 +17,7 @@
   <!-- Script: PWA -->
   <script type="text/javascript" src="app.js"></script>
   <script src="serviceworker.js"></script>
+  <script src="storage.js"></script>
   <script src="js/push.min.js"></script>
   <script>
     function push(){
@@ -77,6 +78,13 @@ function notify(){
 <body>
   <!-- Navbar -->
   <nav class="navbar navbar-expand-md navbar-dark bg-primary fixed-top">
+    <div class="search">
+      <img src="search.svg" alt="Wikimedia logo." width="32" height="32" />
+      <label>
+        <input type="search" />
+        ¿Que deseas buscar?
+      </label>
+    
     <div class="container">
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar3SupportedContent" aria-controls="navbar3SupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
       <div class="collapse navbar-collapse text-center justify-content-center" id="navbar3SupportedContent">
@@ -95,6 +103,7 @@ function notify(){
         </ul>
       </div>
     </div>
+  </div>
   </nav>
   <div class="py-5" style="background-image: url(imagenes/fondorealdelmonte.jpg);">
     <div class="py-5 text-center photo-overlay" style="background-image: url(&quot;assets/restaurant/testimonal_background_light.jpg&quot;);">

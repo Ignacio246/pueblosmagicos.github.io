@@ -44,7 +44,25 @@
 *::before,
 *::after {
   box-sizing: border-box; }
-
+  .search {
+    /* Make sure the `div` stays there, even when scrolling. */
+    position: absolute;
+    /**
+     * Gradient, because why not. Endless opportunities.
+     * The gradient ends in `#36c`, which happens to be the app's
+     * `<meta name="theme-color" content="#36c">`.
+     */
+    background-image: linear-gradient(90deg, #cc33c2, #5b124a, 33%, #cc33c2);
+    /* Use the environment variable for the left anchoring with a fallback. */
+    left: env(titlebar-area-x, 0);
+    /* Use the environment variable for the top anchoring with a fallback. */
+    top: env(titlebar-area-y, 0);
+    /* Use the environment variable for setting the width with a fallback. */
+    width: env(titlebar-area-width, 100%);
+    /* Use the environment variable for setting the height with a fallback. */
+    height: env(titlebar-area-height, 33px);
+   
+  }
 html {
   font-family: sans-serif;
   line-height: 1.15;
