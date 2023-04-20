@@ -8,13 +8,13 @@ if ("serviceWorker" in navigator) {
 }
 
 
-const notification = new Notification("¡Ven y disfruta del Estado de Hidalgo!", {
-    body: "Descubre la cultura, gastronomia y tradiciones en ub solo estado.",
+const notification = new Notification("¡Te gustan las Aventuras!", {
+    body: "Aqui encontraras informacion relacionada con cada Pueblo Magico del Estado de Hidalgo.",
     icon: "/logoutec.png",
     timeout: 1500000,
     vibrate: [100, 100, 100],
     onClick: function(){
-        window.location = "/index.html";
+        window.location = "/Culturas.html";
         console.log(this);
     }
 });
